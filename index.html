@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet</title>
+
+    <!-- Daisy+Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- font -->
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        .lato-regular {
+            font-family: "Lato", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+
+
+</head>
+
+<body class="lato-regular">
+
+    <header class="w-11/12 mx-auto">
+
+        <!-- navbar starts -->
+        <nav class="flex justify-between items-center py-4">
+
+            <div class="logo_name flex items-center justify-center gap-2">
+                <img src="images/logo.webp" alt="">
+                <h4 class="font-bold">Peddy</h4>
+            </div>
+            <div class="options flex gap-5">
+                <p>Home</p>
+                <p>Shop</p>
+                <p>Contact</p>
+            </div>
+            <div class="man_icon">
+                <img src="https://img.icons8.com/?size=32&id=22396&format=png" alt="">
+            </div>
+
+        </nav>
+
+
+        <!-- Nav ends -->
+
+        <!-- Hero section Starts -->
+
+        <div class="Hero space-y-5 py-10">
+
+            <div class="flex justify-center items-center gap-2">
+                <p class="font-bold">Bringing Families Together</p>
+                <img src="https://img.icons8.com/?size=32&id=hkadHxiRMQDL&format=png" alt="">
+            </div>
+
+
+            <h1 class="text-center text-5xl font-bold">Your Path to Adoption <br> Starts Here</h1>
+
+
+            <p class="text-center">Your journey to finding the perfect furry friend begins with us. Explore our
+                resources and adopt a pet
+                today!</p>
+
+            <div class="text-center">
+                <button class="btn bg-[#127982] font-bold"> <a href="#Main">View More</a> </button>
+            </div>
+
+            <img class="mx-auto" src="images/pet.webp" alt="">
+
+
+
+        </div>
+
+        <!-- Hero section ends -->
+
+    </header>
+
+    <main id="Main" class="my-32 w-11/12 mx-auto space-y-5">
+
+        <div class="head_text space-y-3">
+            <h1 class="text-center text-5xl font-bold">Adopt Your Best Friend</h1>
+            <p class="text-center">Bring home a new companion and give a loving pet the forever home they deserve.</p>
+        </div>
+
+        <div id="pet_categories" class="md:flex md:justify-between md:items-center space-y-2 md:space-y-0">
+
+        </div>
+
+        <div class="sort_price flex justify-between items-center">
+            <p class="font-bold">Best Deals For You</p>
+            <button id="sort" class="btn bg-[#127982] font-bold text-white">Sort By Price</button>
+        </div>
+
+        <div class="grid grid-cols-[80%_20%] gap-3">
+            <div id="all_pets" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3 w-full">
+
+
+
+
+
+            </div>
+
+            <div id="liked_list" class="h-[500px] border-2 rounded-lg space-y-2 grid grid-cols-2 p-2 gap-3">
+
+            </div>
+        </div>
+
+        <div id="modal" class="hidden fixed inset-0 z-50 bg-black bg-opacity-50">
+
+
+
+        </div>
+
+        <div id="congrats_modal" class="hidden fixed inset-0 z-50 bg-black bg-opacity-50">
+
+
+
+        </div>
+
+    </main>
+
+    <footer class="bg-black">
+
+        <div class="w-11/12 mx-auto py-9 flex md:flex-row flex-col justify-between md:gap-0 gap-3">
+
+            <div class="space-y-3">
+
+                <div class="logo_name flex items-center justify-start gap-2">
+                    <img src="images/logo.webp" alt="">
+                    <h4 class="font-bold text-white text-2xl">Peddy</h4>
+                </div>
+
+                <div class="text-white">
+                    <p>Location: av. Washington 165, NY CA</p>
+                    <p>54003</p>
+                    <p>Phone: +31 85 964 47 25</p>
+                    <p>Email: info@yourdomain.com</p>
+                    <p>Openings hours: 9.00 AM - 5.00 PM</p>
+                </div>
+
+                <div class="flex gap-2">
+                    <img src="https://img.icons8.com/?size=48&id=118497&format=png" alt="">
+                    <img src="https://img.icons8.com/?size=48&id=yoQabS8l0qpr&format=png" alt="">
+                    <img src="https://img.icons8.com/?size=48&id=19318&format=png" alt="">
+                    <img src="https://img.icons8.com/?size=48&id=32323&format=png" alt="">
+                </div>
+
+            </div>
+
+            <div class="space-y-3">
+                <h1 class="font-bold text-white">Useful Links</h1>
+                <ul class="text-white text-opacity-50">
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Animals</li>
+                    <li>Foundation</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+
+            <div class="space-y-3">
+                <h1 class="font-bold text-white">Drop Message</h1>
+
+                <div class="flex flex-col space-y-2">
+                    <input class="py-2 px-2 bg-gray-600 bg-opacity-50 rounded-lg" type="email" name="" id="" placeholder="Enter your email">
+                    <button class="text-white bg-[#127982] rounded-lg py-2">Subscribe</button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </footer>
+
+    <script src="sort.js"></script>
+    <script src="pet.js"></script>
+</body>
+
+</html>
